@@ -10,3 +10,8 @@ header {
   align-items: center;
   width: 50%;
 }
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: var(--color-primary-900);
+  text-decoration: underline;
+}

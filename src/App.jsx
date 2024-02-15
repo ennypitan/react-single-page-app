@@ -7,9 +7,10 @@ import {
 import HomePage from "./pages/HomePage";
 import Products from "./pages/Products";
 import Layout from "./pages/Layout";
+import Error from "./pages/Error";
 
 const elementRouter = createRoutesFromElements(
-  <Route path="/" element={<Layout />}>
+  <Route path="/" element={<Layout />} errorElement={<Error />}>
     <Route path="/" element={<HomePage />} />
     <Route path="products" element={<Products />} />
   </Route>
