@@ -12,7 +12,7 @@ import ProductDetails from "./pages/ProductDetails";
 
 const elementRouter = createRoutesFromElements(
   <Route path="/" element={<Layout />} errorElement={<Error />}>
-    <Route path="/" element={<HomePage />} />
+    <Route index={true} path="/" element={<HomePage />} />
     <Route path="/products" element={<Products />} />
     <Route path="/products/:productId" element={<ProductDetails />} />
   </Route>
